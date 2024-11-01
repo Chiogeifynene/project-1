@@ -1,7 +1,7 @@
 [app]
 
 # (str) Title of your application
-title = COH 
+title = Champion Of Humanity
 
 # (str) Package name
 package.name = myapp
@@ -16,7 +16,7 @@ source.dir = .
 source.include_exts = py,png,jpg,kv,atlas,wav,otf,ttf
 
 # (list) List of inclusions using pattern matching
-#source.include_patterns = assets/*,images/*.png,images/*jpg,sounds/*.wav,fonts/*.otf,fonts/*.ttf
+#source.include_patterns = assets/*,images/*.png
 
 # (list) Source files to exclude (let empty to not exclude anything)
 #source.exclude_exts = spec
@@ -37,28 +37,27 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,pillow,certifi==2024.8.30
-charset-normalizer==3.4.0
-docutils==0.20.1
-ffmpeg==1.4
-gstreamer-player==1.1.2
-idna==3.10
-Kivy==2.3.0
-kivy-deps.angle==0.4.0
-kivy-deps.glew==0.3.1
-kivy-deps.gstreamer==0.3.3
-kivy-deps.sdl2==0.7.0
-Kivy-Garden==0.1.5
-mutagen==1.47.0
-pydub==0.25.1
-pydub-ffmpeg-wav==0.23.0
-pyffmpeg==2.4.2.18.1
-pygments==2.17.2
-pypiwin32==223
-pywin32==308
-requests==2.31.0
+requirements = python3,pillow,certifi==2024.8.30,
+charset-normalizer==3.4.0,
+docutils==0.20.1,
+ffmpeg==1.4,
+gstreamer-player==1.1.2,
+idna==3.10,
+Kivy==2.3.0,
+kivy-deps.angle==0.4.0,
+kivy-deps.glew==0.3.1,
+kivy-deps.gstreamer==0.3.3,
+kivy-deps.sdl2==0.7.0,
+Kivy-Garden==0.1.5,
+mutagen==1.47.0,
+pydub==0.25.1,
+pydub-ffmpeg-wav==0.23.0,
+pyffmpeg==2.4.2.18.1,
+pygments==2.17.2,
+pypiwin32==223,
+pywin32==308,
+requests==2.31.0,
 urllib3==2.0.7
-
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -88,7 +87,7 @@ orientation = landscape
 osx.python_version = 3
 
 # Kivy version to use
-osx.kivy_version = 1.9.1
+osx.kivy_version = 2.3.0
 
 #
 # Android specific
@@ -157,7 +156,7 @@ fullscreen = 0
 # agreements. This is intended for automation only. If set to False,
 # the default, you will be shown the license when first running
 # buildozer.
-# android.accept_sdk_license = False
+android.accept_sdk_license = True
 
 # (str) Android entry point, default is ok for Kivy-based app
 #android.entrypoint = org.kivy.android.PythonActivity
